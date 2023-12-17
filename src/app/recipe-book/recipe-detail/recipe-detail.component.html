@@ -1,1 +1,37 @@
-<p>recipe-detail works!</p>
+<div class="card-body">
+    <div class="d-flex justify-content-between">
+        <h5 class="card-title">{{recipe.name}}</h5>
+        <i class="bi bi-x-circle-fill" (click)="toggleDetails.emit()"></i>
+
+    </div>
+    <section>
+        <h2>Types of Noodles</h2>
+        <p>Here are some popular types of noodles:</p>
+        <ul>
+            <li>Spaghetti</li>
+            <li>Ramen</li>
+            <li>Udon</li>
+            <!-- Add more noodle types as needed -->
+        </ul>
+    </section>
+    <section>
+        <h2>Noodle Recipes</h2>
+        <p>Explore delicious noodle recipes:</p>
+        <ol>
+            <li><a href="#spaghetti-recipe">Spaghetti Recipe</a></li>
+            <li><a href="#ramen-recipe">Ramen Recipe</a></li>
+            <!-- Add more recipe links as needed -->
+        </ol>
+    </section>
+    <section id="spaghetti-recipe">
+        <h2>Spaghetti Recipe</h2>
+        <p>Here's a simple recipe for spaghetti:</p>
+        <ol>
+            <li>Boil water in a pot.</li>
+            <li>Add salt and spaghetti to boiling water.</li>
+            <li>Cook until al dente.</li>
+            <li>Drain the water.</li>
+            <li>Top with your favorite sauce and enjoy!</li>
+        </ol>
+    </section>
+</div>

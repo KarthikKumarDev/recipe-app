@@ -9,4 +9,10 @@ import { Component, Input } from '@angular/core';
 export class RecipeItemComponent {
   @Input() recipe: Recipe;
 
+  isDetailMode = false;
+
+  onDetailModeToggle() {
+    this.isDetailMode = !this.isDetailMode;
+  }
+
 }
